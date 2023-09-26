@@ -25,18 +25,24 @@ Also, some images have similar brightness around the circumference of the retina
 
 # Data Preprocessing Techniques
 The following data preprocessing techniques were used:
+
 •	Image resizing: All images were resized to a standard size of 299x299 pixels. This helps to reduce the computational cost of training the model.
+
 •	Image normalization: The intensity values of all images were normalized to a range of 0 and 1. 
+
 •	Optic disc cropping: This is a suggested image preprocessing step. The optic disc region was cropped from each image. This helps to focus the model on the most important part of the image for glaucoma detection.
 
 # Model Architecture and Training
-A pre-trained Xception model was used for glaucoma detection. A couple of feature extraction layers and a classification layer added according to the task. The model was fine-tuned on the dataset of fundus images to learn the discriminative features of glaucoma.
+A pre-trained Xception model was used for glaucoma detection. A couple of feature extraction layers and a classification layer were added according to the task. The model was fine-tuned on the dataset of fundus images to learn the discriminative features of glaucoma.
 The model was trained using the Adam optimizer and a cross-entropy loss function. The model was trained for 10 epochs.
-Model Evaluation Scores
+
+# Model Evaluation Scores
 The model was evaluated on a held-out test set of 100 fundus images. The following evaluation scores were obtained:
+
 AUC: 0.5174 (95% CI: 0.4884, 0.5465)
 
 Sensitivity: 0.7349 (95% CI: 0.7076, 0.7623)
+
 Specificity: 0.3 (95% CI: 0.2716, 0.3284)
 
 # Discussion
@@ -44,17 +50,25 @@ The model achieved an AUC score of 0.5174 on the test set, which is below the ex
 
 # Challenges of the Task
 The task of glaucoma detection is challenging due to the following reasons:
+
 •	The optic disc is a small and complex structure, which can make it difficult for the model to learn the discriminative features of glaucoma.
+
 •	Glaucoma is a progressive disease, which means that the appearance of the optic disc can vary depending on the stage of the disease.
+
 •	The dataset used in this study was small and of varying quality. Labelling of images may be incorrect.
 
 # Possible Improvements
 The following improvements could be made to the model:
+
 •	Use a larger and higher quality dataset.
+
 •	Double check the image class/label
+
 •	Use a more powerful GPU to allow for more complex model architectures.
+
 •	Explore different data augmentation techniques to improve the performance of the model on the training set.
+
 •	Consider using image segmentation techniques to identify the optic disc region more accurately.
 
 # Conclusion
-This study demonstrated the feasibility of using deep learning to develop an automated glaucoma detection system. The model achieved a sensitivity of 0.7349 on the test set. However, further work is needed to improve the performance of the model using a larger and higher quality dataset.
+This study demonstrated the feasibility of using deep learning to develop an automated glaucoma detection system. The model achieved a sensitivity of 0.7349 on the test set. However, further work is needed to improve the performance of the model using a larger and higher-quality dataset.
