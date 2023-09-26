@@ -18,7 +18,7 @@ The images above are 5 sample images randomly displayed from the glaucoma class.
  
 Figure 2 Sample images from Sanas class
 
-<img src="https://github.com/mshaek/Glaucoma_detection_task/blob/main/sanas%20images.png" width="528"/>
+<img src="https://github.com/mshaek/Glaucoma_detection_task/blob/main/sanas%20images.png">
 
 Similar issues were found in the images within Sanas Class. For example, “Im0001_ORIGA.jpg” appears to be a glaucoma image.
 Also, some images have similar brightness around the circumference of the retina as optical disc region.
