@@ -10,13 +10,15 @@ The dataset used in this study consists of fundus images (168 Glaucoma class and
 Some of the images may have been wrongly classified. Training a model with this dataset is a very challenging task.
  
 Figure 1: Sample images from Glaucoma Class
+
 <img src="https://github.com/mshaek/Glaucoma_detection_task/blob/main/glaucoma%20images.png">
 
 
 The images above are 5 sample images randomly displayed from the glaucoma class. Image name “Im0488_g_ORIGA.jpg”, third image from the left in Fig-1 appear to be almost sanas class. There are multiple examples of similar issues. 
  
 Figure 2 Sample images from Sanas class
-<img src="https://github.com/mshaek/Glaucoma_detection_task/blob/main/sanas%20images.png" width="128"/>
+
+<img src="https://github.com/mshaek/Glaucoma_detection_task/blob/main/sanas%20images.png" width="528"/>
 
 Similar issues were found in the images within Sanas Class. For example, “Im0001_ORIGA.jpg” appears to be a glaucoma image.
 Also, some images have similar brightness around the circumference of the retina as optical disc region.
